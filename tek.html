@@ -26,7 +26,7 @@
             <nav class="top-nav">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a class="page-title">Xaxis Internship</a>
+                        <a class="page-title">Intelligent Tek Internship</a>
                     </div>
                 </div>
             </nav>
@@ -39,8 +39,8 @@
                     Jacob Hobbs </h4>
                 <li class="no-padding" id="navv-items">
                     <ul class="collapsible collapsible-accordion">
-                        <li class="bold active">
-                            <a class="collapsible-header waves-effect waves-teal active">Xaxis Internship</a>
+                        <li class="bold">
+                            <a class="collapsible-header waves-effect waves-teal active" href="index.html">Xaxis Internship</a>
                         </li>
                         <li class="bold">
                             <a class="collapsible-header waves-effect waves-teal" href="altmetrics.html">Honours Project - Altmetrics</a>
@@ -53,7 +53,7 @@
                         <li class="bold">
                             <a class="collapsible-header waves-effect waves-teal" href="piano.html">MIDI Piano</a>
                         </li>
-                        <li class="bold">
+                        <li class="bold active">
                             <a class="collapsible-header waves-effect waves-teal" href="tek.html">Intelligent Tek Internship</a>
                         </li>
                         <li class="bold">
@@ -70,21 +70,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m9 l10">
-                        <h4>Campaign Creator</h4>
-                        <div class="carousel" data-carousel=""> 
-                            <a class="carousel-item"><img src="assets/img/Xaxis1.JPG"></a>
-                            <a class="carousel-item"><img src="assets/img/Xaxis2.JPG"></a> 
-                            <a class="carousel-item"><img src="assets/img/Xaxis3.JPG"></a> 
-                        </div>
-                        <p class="center"> <i>(Drag for more images)</i> </p>
-                        <p>Over the summer of 2018-2019 I interned for Xaxis at their Auckland office. I created a web application using ASP.NET Core and Azure to help automate a section of the advertising campaign creation process. The application used the REST API&apos;s available for Salesforce and App Nexus to reduce manual data entry to a minimum.</p>
-                        <p>Advertisement set up information is stored in Salesforce. Previously workers would manually move the data from Salesforce into AppNexus, a platform for creating advertising campaigns.</p>
-                        <p>With this application, the user grants the application access to Salesforce and AppNexus through OAuth. The application then pulls information for advertising campaigns that are due to start in the next n-days from a Salesforce API, and loads it into the page. Users then select which campaigns they wish to set live through AppNexus, as well as a settings template for the campaign. The server then creates JSON representations of the various campaign components and sets them live with the AppNexus API.</p>
+                        <h4>Soil Sensors</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6"> 
+                        <img src="assets/img/Moisture%20Device.png" class="tekImage">
+                    </div>
+                    <div class="col s6"> 
+                        <img src="assets/img/Desktop%20Application.png" class="tekImage">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m9 l10">
+                        <p>For my 2017-2018 summer placement&nbsp;I worked at Intelligent Tek, a small company creating tech products for the Agriculture industry.&nbsp;I had a part in creating several prototype soil moisture sensors. The first used WiFi to transmit data from ESP32s placed in fields, and another variant used RF and ran on Arduino. I also created the desktop applications used to record data from these devices and upload it to the products web database.</p>
+                        <p class="center"> </p>
                         <h4>
-                            Tag QA </h4>
-                        <img src="assets/img/Xaxis4.jpg">
-                        <p>Advertising campaigns use pixels to track how an add is interacted with on a web page. Pixels are invisible images which should be loaded whenever a specific action is performed, e.g. the advertisement is loaded or clicked. When a browser makes a request to load a pixel, the server hosting that pixel knows that event took place.</p>
-                        <p>Campaign Managers record these pixels in Excel sheets and must manually check to make sure that each pixel is firing correctly. This WPF application reads the Excel sheets and uses Selenium, a browser automation tool to automatically load and interact with the page on a schedule. The user is allerted if any pixels do not load correctly.</p>
+                            Mobile Applications </h4>
+                        <div class="center-align container">
+                            <img src="assets/img/iOS.png" id="iosImage">
+                        </div>
+                        <p>One of the sensors we created used Bluetooth Low Energy to transmit data to the users phone. I created an iOS application which received, displayed data and allowed the user to upload it to the products database. The application was approved for distribution on the Apple Store. I also converted the existing Android application to use Bluetooth Low Energy and made various changes to the security of the Android application and the user authentication process, both on the app and the web server.<br></p>
                     </div>
                 </div>
             </div>
@@ -110,14 +116,9 @@ $(document).ready(function(){
     dist: 0,
     padding: 0,
     fullWidth: true,
-    indicators: true
+    indicators: true,
   }
   );
-    autoplay()   
-function autoplay() {
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 7000);
-}
 });
         </script>
     </body>

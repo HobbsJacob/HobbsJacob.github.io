@@ -26,7 +26,7 @@
             <nav class="top-nav">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a class="page-title">Xaxis Internship</a>
+                        <a class="page-title">Honours Project - Altmetrics</a>
                     </div>
                 </div>
             </nav>
@@ -39,10 +39,10 @@
                     Jacob Hobbs </h4>
                 <li class="no-padding" id="navv-items">
                     <ul class="collapsible collapsible-accordion">
-                        <li class="bold active">
-                            <a class="collapsible-header waves-effect waves-teal active">Xaxis Internship</a>
-                        </li>
                         <li class="bold">
+                            <a class="collapsible-header waves-effect waves-teal active" href="index.html">Xaxis Internship</a>
+                        </li>
+                        <li class="bold active">
                             <a class="collapsible-header waves-effect waves-teal" href="altmetrics.html">Honours Project - Altmetrics</a>
                             <div class="collapsible-body" style="display: block;">
 </div>
@@ -70,21 +70,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m9 l10">
-                        <h4>Campaign Creator</h4>
-                        <div class="carousel" data-carousel=""> 
-                            <a class="carousel-item"><img src="assets/img/Xaxis1.JPG"></a>
-                            <a class="carousel-item"><img src="assets/img/Xaxis2.JPG"></a> 
-                            <a class="carousel-item"><img src="assets/img/Xaxis3.JPG"></a> 
-                        </div>
-                        <p class="center"> <i>(Drag for more images)</i> </p>
-                        <p>Over the summer of 2018-2019 I interned for Xaxis at their Auckland office. I created a web application using ASP.NET Core and Azure to help automate a section of the advertising campaign creation process. The application used the REST API&apos;s available for Salesforce and App Nexus to reduce manual data entry to a minimum.</p>
-                        <p>Advertisement set up information is stored in Salesforce. Previously workers would manually move the data from Salesforce into AppNexus, a platform for creating advertising campaigns.</p>
-                        <p>With this application, the user grants the application access to Salesforce and AppNexus through OAuth. The application then pulls information for advertising campaigns that are due to start in the next n-days from a Salesforce API, and loads it into the page. Users then select which campaigns they wish to set live through AppNexus, as well as a settings template for the campaign. The server then creates JSON representations of the various campaign components and sets them live with the AppNexus API.</p>
-                        <h4>
-                            Tag QA </h4>
-                        <img src="assets/img/Xaxis4.jpg">
-                        <p>Advertising campaigns use pixels to track how an add is interacted with on a web page. Pixels are invisible images which should be loaded whenever a specific action is performed, e.g. the advertisement is loaded or clicked. When a browser makes a request to load a pixel, the server hosting that pixel knows that event took place.</p>
-                        <p>Campaign Managers record these pixels in Excel sheets and must manually check to make sure that each pixel is firing correctly. This WPF application reads the Excel sheets and uses Selenium, a browser automation tool to automatically load and interact with the page on a schedule. The user is allerted if any pixels do not load correctly.</p>
+                        <h4>Alternative Altmetrics</h4>
+                        <img src="assets/img/Altemtrics.jpg" width="200">
+                        <p>In my fourth and final year at Waikato University I completed my Honours project on Alternative Altmetrics, a ASP.NET web service that fetches information on academic publications from social media. The project involved implementing dozens of APIs for services dealing academic publications as well as social media platforms. What follows is the abstract of the final report.</p>
+                        <p class="center"><a href="assets/Report.pdf" class="center" target="blank">Download the full report.</a></p>
+                        <p></p>
+                        <p>This document outlines the creation of a service for providing altmetrics. Altmetrics are an alternative to citation counts and use a count of mentions from non-academic sources. They can be advantageous due to their speed over citation counts. The existing altmetric providers have two main limitations, high cost and poor usability. An explanation of how identifiers for research items can be used to find mentions of those items, as well as an exploration of the web services available for collecting these identifiers and mentions is provided. Detailed is the creation of an ASP.NET web application that collects altmetrics. The application is both free to access and more usable than other free services. Altmetrics generated by the application are shown and the difficulties around a quantitative comparison with other services discussed. Results indicate that there may be a correlation between citation count and mention count, but this is not a focus. The limitations of this project centre around the cost of accessing certain APIs, especially Twitter, as well as the time required to implement the vast number of possible mention sources.</p>
                     </div>
                 </div>
             </div>
@@ -110,14 +101,9 @@ $(document).ready(function(){
     dist: 0,
     padding: 0,
     fullWidth: true,
-    indicators: true
+    indicators: true,
   }
   );
-    autoplay()   
-function autoplay() {
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 7000);
-}
 });
         </script>
     </body>
